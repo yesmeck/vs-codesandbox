@@ -21,7 +21,10 @@ function createWorkspaceFile(sandbox: SimpleSandbox) {
       'git.autoRepositoryDetection': false,
     },
   };
-  const workspaceFile = join(WORKSPACE_DIR, `${sandbox.id}.code-workspace`);
+  const workspaceFile = join(
+    WORKSPACE_DIR,
+    `Codesandbox: ${[sandbox.title, sandbox.id].filter(Boolean).join('-')}.code-workspace`,
+  );
   sander.writeFileSync(workspaceFile, JSON.stringify(settings, null, 2));
   return workspaceFile;
 }
