@@ -73,7 +73,6 @@ export default class FS implements vscode.FileSystemProvider {
   }
 
   async writeFile(uri: vscode.Uri, content: Uint8Array) {
-    console.log('writeFile', uri);
     const file = await this.lookup(uri);
     if (file) {
       await this.client.updateModule(uri.authority, file.shortid!, { code: content.toString() });
