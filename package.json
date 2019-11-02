@@ -1,48 +1,59 @@
 {
-	"name": "vs-codesandbox",
-	"displayName": "vs-codesandbox",
-	"description": "Edit codesandbox in your vscode.",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.39.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:codesandbox.login"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "codesandbox.login",
-				"title": "Login",
-				"category": "Codesandbox",
-				"detail": "Login to codesandbox",
-				"requiresSignedOut": true
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "yarn run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.39.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"tslint": "^5.12.1",
-		"typescript": "^3.3.1",
-		"vscode-test": "^1.2.0"
-	},
-	"dependencies": {
-		"axios": "^0.19.0"
-	}
+  "name": "vs-codesandbox",
+  "displayName": "vs-codesandbox",
+  "description": "Edit codesandbox in your vscode.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.39.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:codesandbox.login",
+    "onCommand:codesandbox.openSandbox",
+    "onFileSystem:codesandboxfs"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codesandbox.login",
+        "title": "Login",
+        "category": "Codesandbox",
+        "detail": "Login to codesandbox",
+        "requiresSignedOut": true
+      },
+      {
+        "command": "codesandbox.openSandbox",
+        "title": "Open Sandbox",
+        "category": "Codesandbox",
+        "detail": "Open a sandbox",
+        "promptsSignIn": true
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^12.12.5",
+    "@types/vscode": "^1.39.0",
+    "glob": "^7.1.4",
+    "mocha": "^6.1.4",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
+    "vscode-test": "^1.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "date-fns": "^2.6.0",
+    "sander": "^0.6.0"
+  }
 }
