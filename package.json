@@ -13,6 +13,7 @@
     "onCommand:codesandbox.login",
     "onCommand:codesandbox.openSandbox",
     "onCommand:codesandbox.previewSandbox",
+    "onCommand:codesandbox.showInWebEditor",
     "onFileSystem:codesandboxfs"
   ],
   "main": "./out/extension.js",
@@ -27,16 +28,22 @@
       },
       {
         "command": "codesandbox.openSandbox",
-        "title": "Open Sandbox",
+        "title": "Open sandbox",
         "category": "Codesandbox",
         "detail": "Open a sandbox",
         "promptsSignIn": true
-			},
-			{
+      },
+      {
         "command": "codesandbox.previewSandbox",
-        "title": "Preview Sandbox",
+        "title": "Preview sandbox",
         "category": "Codesandbox",
         "detail": "Preview in browser"
+      },
+      {
+        "command": "codesandbox.showInWebEditor",
+        "title": "Show in web editor",
+        "category": "Codesandbox",
+        "detail": "Show sandbox in web editor"
       }
     ]
   },

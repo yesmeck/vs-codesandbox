@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-export default async function preview() {
+export default async function previewSandbox() {
   const folders = vscode.workspace.workspaceFolders;
   if (folders) {
     console.log(folders[0]);
