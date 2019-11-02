@@ -12,6 +12,7 @@
   "activationEvents": [
     "onCommand:codesandbox.login",
     "onCommand:codesandbox.openSandbox",
+    "onCommand:codesandbox.previewSandbox",
     "onFileSystem:codesandboxfs"
   ],
   "main": "./out/extension.js",
@@ -30,6 +31,12 @@
         "category": "Codesandbox",
         "detail": "Open a sandbox",
         "promptsSignIn": true
+			},
+			{
+        "command": "codesandbox.previewSandbox",
+        "title": "Preview Sandbox",
+        "category": "Codesandbox",
+        "detail": "Preview in browser"
       }
     ]
   },
