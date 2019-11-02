@@ -40,7 +40,6 @@ export default async function createSandbox(context: vscode.ExtensionContext, cl
   if (!selection) {
     return;
   }
-  const sandbox = await client.fetchSandbox(selection.template.shortid);
-  console.log(sandbox);
+  const sandbox = await client.forkSandbox(selection.template.shortid);
   open(sandbox);
 }

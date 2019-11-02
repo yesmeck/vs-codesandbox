@@ -1,10 +1,6 @@
 import * as vscode from 'vscode';
 import { format } from 'date-fns';
-import * as sander from 'sander';
 import Client from '../Client';
-import { SimpleSandbox } from '../type';
-import { WORKSPACE_DIR } from '../paths';
-import { join } from 'path';
 import open from '../open';
 
 export default async function openSandbox(context: vscode.ExtensionContext, client: Client) {

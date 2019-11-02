@@ -40,6 +40,11 @@ export default class Client {
     return getData(res);
   }
 
+  async updateSandbox(id: string, sandbox: any): Promise<Sandbox> {
+    const res = await this.request.put(`/sandboxes/${id}`, { sandbox });
+    return getData(res);
+  }
+
   async createModule(id: string, module: any): Promise<Module> {
     const res = await this.request.post(`/sandboxes/${id}/modules`, {
       module,

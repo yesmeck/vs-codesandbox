@@ -12,6 +12,7 @@
   "activationEvents": [
     "onCommand:codesandbox.login",
     "onCommand:codesandbox.createSandbox",
+    "onCommand:codesandbox.renameSandbox",
     "onCommand:codesandbox.openSandbox",
     "onCommand:codesandbox.previewSandbox",
     "onCommand:codesandbox.showInWebEditor",
@@ -32,6 +33,13 @@
         "title": "Create sandbox",
         "category": "Codesandbox",
         "detail": "Create a new sandbox"
+      },
+
+      {
+        "command": "codesandbox.renameSandbox",
+        "title": "Rename sandbox",
+        "category": "Codesandbox",
+        "detail": "Rename current sandbox"
       },
       {
         "command": "codesandbox.openSandbox",

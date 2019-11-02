@@ -8,6 +8,7 @@ import Client from './Client';
 import FS from './fs';
 import showInWebEditor from './commands/showInWebEditor';
 import createSandbox from './commands/createSandbox';
+import renameSandbox from './commands/renameSandbox';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -18,6 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.workspace.registerFileSystemProvider('codesandboxfs', new FS(client), { isCaseSensitive: true }),
     vscode.commands.registerCommand('codesandbox.login', () => login(context, client)),
     vscode.commands.registerCommand('codesandbox.createSandbox', () => createSandbox(context, client)),
+    vscode.commands.registerCommand('codesandbox.renameSandbox', () => renameSandbox(context, client)),
     vscode.commands.registerCommand('codesandbox.openSandbox', () => openSandbox(context, client)),
     vscode.commands.registerCommand('codesandbox.previewSandbox', previewSandbox),
     vscode.commands.registerCommand('codesandbox.showInWebEditor', showInWebEditor),
