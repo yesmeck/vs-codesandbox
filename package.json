@@ -1,6 +1,6 @@
 {
-  "name": "vs-codesandbox",
-  "displayName": "vs-codesandbox",
+  "name": "codesandbox",
+  "displayName": "Codesandbox",
   "description": "Edit codesandbox in your vscode.",
   "version": "0.0.1",
   "engines": {
