@@ -35,6 +35,11 @@ export default class Client {
     return getData(res);
   }
 
+  async forkSandbox(id: string): Promise<Sandbox> {
+    const res = await this.request.post(`/sandboxes/${id}/fork`);
+    return getData(res);
+  }
+
   async createModule(id: string, module: any): Promise<Module> {
     const res = await this.request.post(`/sandboxes/${id}/modules`, {
       module,
