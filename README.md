@@ -4,9 +4,11 @@ This VS Code extension brings Codesandbox into your favorite editor, allowing yo
 
 [![Screen record](https://user-images.githubusercontent.com/465125/68078661-b5d64e80-fe15-11e9-9f17-41a9d11fcc58.png)](https://www.youtube.com/watch?v=GPoK7DOB8E8)
 
-## Install
 
-[![](https://img.shields.io/badge/vscode-install-blue?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=yesmeck.codesandbox)
+## Getting Started
+
+1. [Install the extension](https://marketplace.visualstudio.com/items?itemName=yesmeck.codesandbox).
+1. Open the Command Palette (Ctrl/Cmd+Shift+P) and type "codesandbox login".
 
 ## Available Commands
 
