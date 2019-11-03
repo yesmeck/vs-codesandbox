@@ -20,7 +20,7 @@ function createWorkspaceFile(sandbox: { title: string, id: string }) {
   };
   const workspaceFile = join(
     WORKSPACE_DIR,
-    `Codesandbox: ${[sandbox.title, sandbox.id].filter(Boolean).join('-')}.code-workspace`,
+    `CodeSandbox: ${[sandbox.title, sandbox.id].filter(Boolean).join('-')}.code-workspace`,
   );
   sander.writeFileSync(workspaceFile, JSON.stringify(settings, null, 2));
   return workspaceFile;
