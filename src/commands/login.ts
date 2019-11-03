@@ -6,6 +6,7 @@ export default async function login(context: vscode.ExtensionContext, client: Cl
   await vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(LOGIN_URL));
   const authToken = await vscode.window.showInputBox({
     placeHolder: 'Paste code here',
+    ignoreFocusOut: true,
   });
   if (authToken) {
     try {
