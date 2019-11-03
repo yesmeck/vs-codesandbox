@@ -1,5 +1,5 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
-import { BASE_URL } from './url';
+import { BASE_URL, API_URL } from './url';
 import { SimpleSandbox, Sandbox, Directory, Module } from './type';
 
 function getData(res: AxiosResponse) {
@@ -15,7 +15,7 @@ export default class Client {
       headers.Authorization = `Bearer ${token}`;
     }
     this.request = axios.create({
-      baseURL: BASE_URL + '/api/v1',
+      baseURL: API_URL,
       headers,
     });
   }
