@@ -2,7 +2,7 @@
   "name": "codesandbox",
   "displayName": "Codesandbox",
   "description": "Edit codesandbox in your vscode.",
-	"icon": "images/icon.png",
+  "icon": "images/icon.png",
   "version": "0.0.1",
   "publisher": "yesmeck",
   "engines": {
@@ -11,6 +11,10 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesmeck/vs-codesandbox.git"
+  },
   "activationEvents": [
     "onCommand:codesandbox.login",
     "onCommand:codesandbox.createSandbox",
@@ -36,7 +40,6 @@
         "category": "Codesandbox",
         "detail": "Create a new sandbox"
       },
-
       {
         "command": "codesandbox.renameSandbox",
         "title": "Rename sandbox",
