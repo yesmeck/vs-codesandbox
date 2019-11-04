@@ -3,7 +3,7 @@
   "displayName": "CodeSandbox",
   "description": "Bring CodeSandbox into your favorite editor",
   "icon": "images/icon.png",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "yesmeck",
   "engines": {
     "vscode": "^1.39.0"
