@@ -1,7 +1,7 @@
 {
   "name": "codesandbox",
-  "displayName": "Codesandbox",
-  "description": "Edit codesandbox in your vscode.",
+  "displayName": "CodeSandbox",
+  "description": "Bring CodeSandbox into your favorite editor",
   "icon": "images/icon.png",
   "version": "0.0.4",
   "publisher": "yesmeck",
