@@ -67,6 +67,10 @@
       }
     ]
   },
+  "galleryBanner": {
+    "color": "#1c2022",
+    "theme": "dark"
+  },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
