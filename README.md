@@ -7,7 +7,7 @@ This VS Code extension brings CodeSandbox into your favorite editor, allowing yo
 
 ## Getting Started
 
-1. [Install the extension](https://marketplace.visualstudio.com/items?itemName=yesmeck.codesandbox).
+1. [Install the extension](http://bit.ly/2WJo4dr).
 1. Open the Command Palette (Ctrl/Cmd+Shift+P) and type "codesandbox login".
 1. Copy authorization code to the input.
 1. Open the Command Palette (Ctrl/Cmd+Shift+P) and type "codesandbox create".
