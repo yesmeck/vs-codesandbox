@@ -17,7 +17,7 @@ This VS Code extension brings CodeSandbox into your favorite editor, allowing yo
 ## Available Commands
 
 - Login (codesandbox.login)
-- Create sandbox (codesandbox.creaetSandbox)
+- Create sandbox (codesandbox.createSandbox)
 - Rename sandbox (codesandbox.renameSandbox)
 - Open sandbox (codesandbox.openSandbox)
 - Preview sandbox (codesandbox.previewSandbox)
